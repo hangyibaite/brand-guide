@@ -23,7 +23,7 @@ Do not proceed until attached.
 Read in this order:
 1. `brand-positioning.md` — extract personality axes, what the brand is not, named competitors
 2. Attached brand palette doc — extract all filled values
-3. Any reference materials in `assets/references/` — images, screenshots, code snippets
+3. Reference materials in the references folder (check `references/` or `assets/references/`) — scan `images/`, `code/`, `design/`, and `other/` subfolders
 
 Every design decision below must trace back to one of these three sources.
 
@@ -139,10 +139,13 @@ Every spec in this file should be consistent with where the brand sits on these 
 
 ## Step 5: Reference materials
 
-After generating all three files, check `assets/references/`:
+After generating all three files, check the references folder (check `references/` or `assets/references/`):
 
 - `images/` — note which references informed which decisions in each file
 - `code/` — note which snippets correspond to which specs
+- `design/` — note which design files informed which style decisions
+- `prompts/` — note any briefs that shaped direction
+- `other/` — note anything else that was used
 
 Add a `## References` section at the bottom of each file listing which reference materials were used and what decision each one informed.
 

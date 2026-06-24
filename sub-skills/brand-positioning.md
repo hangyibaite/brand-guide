@@ -28,6 +28,8 @@ On launch, always send this prompt:
 
 ---
 
+**Reference materials:** Also scan the references folder (check `references/` or `assets/references/`) for any materials relevant to positioning — competitor screenshots, market docs, positioning examples, content samples. Note which references you find; they will be cited in the output.
+
 If dogma doc is missing after they respond: stop, tell them it's required, send the link again.
 If ICP or offer are missing: proceed but flag at the end which sections are weaker as a result and recommend they rerun after completing those skills.
 
@@ -76,6 +78,8 @@ List specific phrases, framings, and language the brand refuses. Concrete terms 
 ## Output format
 
 Write `brand-positioning.md` in clean markdown. H2 headers matching the six section names above. Prose within sections — no bullet dumps unless the content genuinely requires a list. Under 600 words total. Dense, not exhaustive.
+
+End the file with a `## References` section listing which reference files were consulted and what section or decision each one informed. If no reference materials were used, omit this section.
 
 ---
 

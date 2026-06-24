@@ -27,8 +27,9 @@ You need three things before running:
 
 1. Add this skill to your Claude Code project
 2. Say "build my brand guide" or any brand-related trigger
-3. Attach your documents when prompted
-4. Confirm each output before the next step runs
+3. The skill creates a references folder and asks you to drop in reference materials (images, code, designs, prompts, etc.) — you can dump everything unsorted and it will organize automatically
+4. Attach your required documents when prompted
+5. Confirm each output before the next step runs
 
 The skill will never skip inputs, run out of order, or generate content without your confirmation.
 
@@ -37,12 +38,19 @@ The skill will never skip inputs, run out of order, or generate content without 
 ```
 brand-guide/
 ├── SKILL.md                          # Orchestrator
+├── setup.md                          # References folder setup and auto-sorting
 ├── output-reference.md               # Output file list and schema
 ├── README.md
-└── sub-skills/
-    ├── brand-positioning.md          # Positioning generation
-    ├── brand-voice.md                # Voice rules and content generation
-    └── brand-design.md              # Color, typography, design style
+├── sub-skills/
+│   ├── brand-positioning.md          # Positioning generation
+│   ├── brand-voice.md                # Voice rules and content generation
+│   └── brand-design.md              # Color, typography, design style
+└── references/                       # Created at runtime (or assets/references/)
+    ├── images/
+    ├── code/
+    ├── design/
+    ├── prompts/
+    └── other/
 ```
 
 ## Version

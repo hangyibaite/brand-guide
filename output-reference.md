@@ -38,6 +38,28 @@ Each output is confirmed by the user before the next begins. Brand design files 
 
 ---
 
+## References folder
+
+Created automatically by `setup.md` before the brand guide runs.
+
+**Path detection:** if an `assets/` folder exists in the project root → `assets/references/`. Otherwise → `references/` at root.
+
+**Subfolders:**
+
+| Folder | Contents |
+|--------|----------|
+| `images/` | Logos, screenshots, photos, icons, mood board images (.png, .jpg, .svg, .webp, etc.) |
+| `code/` | HTML, CSS, JS, config files, component snippets (.html, .css, .js, .ts, .json, .yaml, etc.) |
+| `design/` | Figma exports, PSDs, PDFs, style guides, mood boards (.fig, .sketch, .psd, .pdf, .ai, etc.) |
+| `prompts/` | AI prompts, content briefs, writing samples (.md, .txt containing prompt/instruction text) |
+| `other/` | Anything that doesn't clearly fit above |
+
+Users can dump files unsorted into the root — the skill auto-classifies and sorts them before sub-skills run. Ambiguous files are flagged for user confirmation.
+
+All sub-skill outputs include a `## References` section citing which reference files were used and what they informed.
+
+---
+
 ## Downstream usage
 
-All outputs are designed to be read by other Claude Code skills and workflows. Point your `CLAUDE.md` to the brand guide folder so downstream tasks (landing pages, copy, content) reference these files automatically.
+All outputs are designed to be read by other Claude Code skills and workflows. Point your `CLAUDE.md` to both the brand guide output folder and the references folder so downstream tasks (landing pages, copy, content) can reference these files automatically.

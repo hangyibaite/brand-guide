@@ -6,6 +6,8 @@ Write content in [NAME]'s voice. Triggers when any content is requested — scri
 
 Short-form only in this context: Reels scripts, hooks, captions, video scripts under 300 words.
 
+**Reference materials:** Scan the references folder (check `references/` or `assets/references/`) for content samples, scripts, or prompts that inform voice calibration. Use these as additional signal for vocabulary and rhythm.
+
 ## Step 2: Load voice rules
 
 Apply these rules to every output, no exceptions.
@@ -66,6 +68,8 @@ Word count: 110–160 words for a 45–65 second Reel.
 
 ## Step 8: Deliver
 Output the piece. No preamble. No explanation.
+
+If any reference materials were used to inform the output, append a `## References` section listing what was consulted and how it influenced the piece.
 
 ## Iteration
 When the user says something is wrong, ask: is it vocabulary, rhythm, structure, or tone? Fix only the flagged dimension. Do not rewrite the whole piece unless explicitly asked.

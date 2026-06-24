@@ -6,6 +6,14 @@ description: >
 
 # Brand Guide — Orchestrator
 
+## Phase 0: Setup
+
+On launch, read and execute `setup.md` first. This creates the references folder (at `references/` or `assets/references/` depending on the project structure), outputs the path to the user, and waits for them to add reference materials before continuing.
+
+Do not proceed to Phase 1 until setup is complete.
+
+---
+
 ## Phase 1: Input collection
 
 On launch, always send this prompt first — regardless of what the user has or hasn't attached:
@@ -41,7 +49,7 @@ On launch, always send this prompt first — regardless of what the user has or 
 > The output from the Offer Breakdown skill — attach the file or paste the text.
 > → Don't have one? Run this skill first: https://github.com/hangyibaite/offer-breakdown
 >
-> Also drop any reference materials — screenshots, images, HTML/CSS snippets, website URLs, anything you want referenced during generation. Optional but improves output quality.
+> If you haven't already, drop any reference materials into the references folder created during setup — the path was shown above. Screenshots, images, code snippets, design files, prompts, anything relevant. I'll organize them automatically.
 >
 > Attach everything and I'll get started."
 
@@ -54,6 +62,14 @@ Wait for the user to respond. If any of the 3 required docs are missing, list ex
 ## Phase 2: Clarifying questions
 
 Read all attached documents. Ask any clarifying questions. Present a brief summary of understanding. User confirms before any file is written.
+
+---
+
+## Phase 2.5: Organize References
+
+Before running sub-skills, scan the references folder and organize any unsorted files. Follow the classification and sorting rules in `setup.md` Step 5. Output a summary of what was found and where it was placed. Flag any ambiguous files for user confirmation.
+
+This organized structure is now available to all sub-skills during Phase 3.
 
 ---
 
@@ -81,7 +97,7 @@ Outputs: `color-palette.md`, `typography.md`, `design-style.md`
 Default output path: `assets/content/brand-guide/` — created automatically.
 To change the path, tell Claude Code before running this skill.
 
-> "Your brand guide is complete. Everything downstream — landing page, copy, content — reads from your brand guide folder. Make sure your CLAUDE.md points here."
+> "Your brand guide is complete. Everything downstream — landing page, copy, content — reads from your brand guide folder. Your references are organized at `[references path]`. Make sure your CLAUDE.md points to both the brand guide output folder and the references folder."
 
 ---
 
